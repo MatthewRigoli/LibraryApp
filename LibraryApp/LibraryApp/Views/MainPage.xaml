@@ -6,29 +6,9 @@
              Title="{Binding Title}">
 
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <Image Source="{Binding Logo}"></Image>
-        
-        <Image Source="{Binding Appimage}"></Image>
-
-        <Label Text="Library Hours:" 
-               FontSize="Medium" 
-               FontAttributes="Bold" 
-               HorizontalTextAlignment="Center"></Label>
-
-        <Label Text="Mon - Fri: 8am to 5pm" 
-               FontSize="Small" 
-               FontAttributes="Bold"
-               HorizontalTextAlignment="Center"></Label>
-
-        <Label Text="Saturday: 9am to 7pm" 
-               FontSize="Small" 
-               FontAttributes="Bold"
-               HorizontalTextAlignment="Center"></Label>
-
-        <Label Text="Sunday: Closed" 
-               FontSize="Small" 
-               FontAttributes="Bold"
-               HorizontalTextAlignment="Center"></Label>
+        <Image Source="{Binding Logo}"
+               Scale="1.4"
+               Margin="0,0,0,40"></Image>
 
         <Grid>
             <Grid.RowDefinitions>
@@ -37,14 +17,52 @@
 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="auto"></ColumnDefinition>
-                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
 
-            <Button Text="Events" Grid.Row="0" Grid.Column="0"></Button>
-            <Button Text="New" Grid.Row="0" Grid.Column="1"></Button>
+            <Label Text="+Library Information" 
+                   Grid.Column="0"
+                   FontSize="Small"
+                   HorizontalTextAlignment="Start"
+                   VerticalTextAlignment="Center"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   Margin="0,0,-7,-10"
+                   BackgroundColor="#FB6107"></Label>
+
+            <Label Text="Explore>"
+               Grid.Column="1"
+               FontSize="Small"
+               HorizontalTextAlignment="End"
+               VerticalTextAlignment="Center"
+               TextColor="White"
+               Padding="10,10,2,10" 
+               Margin="0,0,0,-10"
+               FontAttributes="Bold"
+               BackgroundColor="#FB6107"></Label>
 
         </Grid>
-    </StackLayout>
-    
 
+        <StackLayout BackgroundColor="#FFBF00">
+            <Label Text="Library Hours:" 
+                FontSize="Medium" 
+                FontAttributes="Bold" 
+                HorizontalTextAlignment="Center"></Label>
+
+            <Label Text="Mon - Fri: 8am to 5pm" 
+                   FontSize="Small" 
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"></Label>
+
+            <Label Text="Saturday: 9am to 7pm" 
+                   FontSize="Small" 
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"></Label>
+
+            <Label Text="Sunday: Closed" 
+                   FontSize="Small" 
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"></Label>
+        </StackLayout>
+    </StackLayout>
 </ContentPage>
