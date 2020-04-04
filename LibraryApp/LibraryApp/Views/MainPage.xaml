@@ -2,14 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LibraryApp.Views.MainPage"
+             BackgroundColor="#EEEEEE"
              Title="{Binding Title}">
 
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <Label Text="Mount Pleasant Library" 
-               FontSize="Large" 
-               FontAttributes="Bold" 
-               HorizontalTextAlignment="Center"/>
-
+        <Image Source="{Binding Logo}"></Image>
+        
         <Image Source="{Binding Appimage}"></Image>
 
         <Label Text="Library Hours:" 
