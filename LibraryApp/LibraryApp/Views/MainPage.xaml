@@ -10,36 +10,36 @@
                Scale="1.4"
                Margin="0,0,0,40"></Image>
 
-        <Grid>
+        <Grid 
+            BackgroundColor="#FB6107"
+            Padding="0,0,0,10"
+            Margin="0,0,0,-7">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"></RowDefinition>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
 
-            <Label Text="+Library Information" 
+            <Button Text="+Library Information" 
+                   Command="{Binding InformationPage}"
                    Grid.Column="0"
-                   FontSize="Small"
-                   HorizontalTextAlignment="Start"
-                   VerticalTextAlignment="Center"
+                   HorizontalOptions="StartAndExpand"
                    FontAttributes="Bold"
                    TextColor="White"
                    Margin="0,0,-7,-10"
-                   BackgroundColor="#FB6107"></Label>
+                   BackgroundColor="#FB6107"></Button>
 
-            <Label Text="Explore>"
+            <Button Text="Explore>"
                Grid.Column="1"
-               FontSize="Small"
-               HorizontalTextAlignment="End"
-               VerticalTextAlignment="Center"
+               HorizontalOptions="EndAndExpand"
                TextColor="White"
                Padding="10,10,2,10" 
                Margin="0,0,0,-10"
                FontAttributes="Bold"
-               BackgroundColor="#FB6107"></Label>
+               BackgroundColor="#FB6107"></Button>
 
         </Grid>
 
