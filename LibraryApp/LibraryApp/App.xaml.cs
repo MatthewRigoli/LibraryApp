@@ -30,6 +30,8 @@ namespace LibraryApp
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<BooksPage, BooksPageViewModel>();
+            containerRegistry.RegisterForNavigation<EventsPage, EventsPageViewModel>();
         }
     }
 }

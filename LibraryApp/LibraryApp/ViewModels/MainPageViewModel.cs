@@ -1,4 +1,5 @@
-﻿using Prism.Commands;
+﻿using LibraryApp.Views;
+using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
 using System;
@@ -11,13 +12,52 @@ namespace LibraryApp.ViewModels
 {
     public class MainPageViewModel : ViewModelBase
     {
+        private INavigationService _navigationService;
         public MainPageViewModel(INavigationService navigationService)
             : base(navigationService)
         {
             Title = "Main Page";
+            _navigationService = navigationService;
+            Books = new Command(navigate__books_execute);
+            Events = new Command(navigate_events_execute);
         }
+
+        /*-----------------Command variables-----------------*/
+        private Command books;
+
+        public Command Books
+        {
+            get { return books; }
+            set { books = value; }
+        }
+
+        private Command events;
+
+        public Command Events
+        {
+            get { return events; }
+            set { events = value; }
+        }
+        /*-----------------Command variables-----------------*/
+
+
+        /*--------------------Navagations--------------------*/
+        private async void navigate__books_execute()
+        {
+            await _navigationService.NavigateAsync(nameof(LibraryApp.Views.BooksPage));
+        }
+
+        private async void navigate_events_execute()
+        {
+            await _navigationService.NavigateAsync(nameof(LibraryApp.Views.EventsPage));
+        }
+        /*--------------------Navagations--------------------*/
+
+
+        /*----------------------Images-----------------------*/
         public ImageSource Logo => ImageSource.FromResource("LibraryApp.images.logo.png");
         public ImageSource Book => ImageSource.FromResource("LibraryApp.images.Skyward.jpg");
         public ImageSource Book2 => ImageSource.FromResource("LibraryApp.images.kill.jpg");
+        /*----------------------Images-----------------------*/
     }
 }

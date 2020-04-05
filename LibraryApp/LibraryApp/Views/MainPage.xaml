@@ -53,6 +53,7 @@
                 </Label>
                 <Image></Image>
                 <Button Text="Events"
+                        Command="{Binding Events}"
                         Padding="15,10,15,10"
                         Margin="0,20,0,0"
                         HorizontalOptions="Center"
@@ -87,6 +88,7 @@
                        Margin="-5,-150,0,-150"></Image>
                 </Grid>
                 <Button Text="Books"
+                        Command="{Binding Books}"
                         TextColor="White"
                         Padding="15,10,15,10"
                         Margin="0,20,0,0"
