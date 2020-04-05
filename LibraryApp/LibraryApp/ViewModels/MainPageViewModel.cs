@@ -17,6 +17,7 @@ namespace LibraryApp.ViewModels
             Title = "Main Page";
         }
         public ImageSource Logo => ImageSource.FromResource("LibraryApp.images.logo.png");
-        public ImageSource Appimage => ImageSource.FromResource("LibraryApp.images.mplibrary.png");
+        public ImageSource Book => ImageSource.FromResource("LibraryApp.images.Skyward.jpg");
+        public ImageSource Book2 => ImageSource.FromResource("LibraryApp.images.kill.jpg");
     }
 }

@@ -5,64 +5,119 @@
              BackgroundColor="#EEEEEE"
              Title="{Binding Title}">
 
-    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <Image Source="{Binding Logo}"
-               Scale="1.4"
-               Margin="0,0,0,40"></Image>
+    <ScrollView>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Image Source="{Binding Logo}"
+                   Scale="1.4"
+                   Margin="0,0,0,40"></Image>
 
-        <Grid 
-            BackgroundColor="#FB6107"
-            Padding="0,0,0,10"
-            Margin="0,0,0,-7">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="auto"></RowDefinition>
-            </Grid.RowDefinitions>
+            <Grid 
+                BackgroundColor="#FB6107"
+                Padding="0,0,0,10"
+                Margin="0,0,0,-7">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
 
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
 
-            <Button Text="+Library Information" 
-                   Command="{Binding InformationPage}"
-                   Grid.Column="0"
-                   HorizontalOptions="StartAndExpand"
-                   FontAttributes="Bold"
+                <Button Text="+Library Information" 
+                       Command="{Binding InformationPage}"
+                       Grid.Column="0"
+                       HorizontalOptions="StartAndExpand"
+                       FontAttributes="Bold"
+                       TextColor="White"
+                       Margin="0,0,-7,-10"
+                       BackgroundColor="#FB6107"></Button>
+
+                <Button Text="Explore>"
+                   Grid.Column="1"
+                   HorizontalOptions="EndAndExpand"
                    TextColor="White"
-                   Margin="0,0,-7,-10"
+                   Padding="10,10,2,10" 
+                   Margin="0,0,0,-10"
+                   FontAttributes="Bold"
                    BackgroundColor="#FB6107"></Button>
 
-            <Button Text="Explore>"
-               Grid.Column="1"
-               HorizontalOptions="EndAndExpand"
-               TextColor="White"
-               Padding="10,10,2,10" 
-               Margin="0,0,0,-10"
-               FontAttributes="Bold"
-               BackgroundColor="#FB6107"></Button>
+            </Grid>
+            <StackLayout BackgroundColor="#FCE80F"
+                         Padding="0,0,0,10"
+                         Margin="0,0,0,-7">
+                <Label Text="Up Coming Events!"
+                       HorizontalTextAlignment="Center"
+                       FontSize="Medium"
+                       FontFamily="Helvetica">
+                </Label>
+                <Image></Image>
+                <Button Text="Events"
+                        Padding="15,10,15,10"
+                        Margin="0,20,0,0"
+                        HorizontalOptions="Center"
+                        BackgroundColor="#FCE80F"
+                        BorderColor="Black"></Button>
+            </StackLayout>
+            <StackLayout BackgroundColor="#004777"
+                         Padding="0,0,0,10"
+                         Margin="0,0,0,-7">
+                <Label Text="Books Of The Month!"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center"
+                       FontSize="Medium"
+                       FontFamily="Helvetica"></Label>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
 
-        </Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
 
-        <StackLayout BackgroundColor="#FFBF00">
-            <Label Text="Library Hours:" 
-                FontSize="Medium" 
-                FontAttributes="Bold" 
-                HorizontalTextAlignment="Center"></Label>
+                    <Image Source="{Binding Book}"
+                       Grid.Column="0"
+                       Scale=".53"
+                       Margin="0,-150,-5,-150"></Image>
+                    <Image Source="{Binding Book2}"
+                       Grid.Column="1"
+                       Scale=".6"
+                       Margin="-5,-150,0,-150"></Image>
+                </Grid>
+                <Button Text="Books"
+                        TextColor="White"
+                        Padding="15,10,15,10"
+                        Margin="0,20,0,0"
+                        HorizontalOptions="Center"
+                        BackgroundColor="#004777"
+                        BorderColor="Black"></Button>
+            </StackLayout>
+        
 
-            <Label Text="Mon - Fri: 8am to 5pm" 
-                   FontSize="Small" 
-                   FontAttributes="Bold"
-                   HorizontalTextAlignment="Center"></Label>
+            <StackLayout>
+                <Label Text="Library Hours:" 
+                    FontSize="Medium" 
+                    FontAttributes="Bold" 
+                    HorizontalTextAlignment="Center"
+                    Margin="0,10,0,0"></Label>
 
-            <Label Text="Saturday: 9am to 7pm" 
-                   FontSize="Small" 
-                   FontAttributes="Bold"
-                   HorizontalTextAlignment="Center"></Label>
+                <Label Text="Mon - Fri: 8am to 5pm" 
+                       FontSize="Small" 
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"></Label>
 
-            <Label Text="Sunday: Closed" 
-                   FontSize="Small" 
-                   FontAttributes="Bold"
-                   HorizontalTextAlignment="Center"></Label>
+                <Label Text="Saturday: 9am to 7pm" 
+                       FontSize="Small" 
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"></Label>
+
+                <Label Text="Sunday: Closed" 
+                       FontSize="Small" 
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"></Label>
+            </StackLayout>
         </StackLayout>
-    </StackLayout>
+    </ScrollView>
 </ContentPage>
