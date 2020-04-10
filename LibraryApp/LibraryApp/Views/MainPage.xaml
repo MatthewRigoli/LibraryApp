@@ -121,6 +121,8 @@
                        HorizontalTextAlignment="Center"></Label>
                 <Button Text="(435) 462-3240"
                         Clicked="PhoneCall_Clicked"></Button>
+                <Button Text="Send Email"
+                        Clicked="Email_Clicked"></Button>
             </StackLayout>
         </StackLayout>
     </ScrollView>

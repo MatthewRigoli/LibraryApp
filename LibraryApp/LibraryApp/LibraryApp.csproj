@@ -5,6 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="NewFolder\**" />
+    <EmbeddedResource Remove="NewFolder\**" />
+    <None Remove="NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="images\kill.jpg" />
     <None Remove="images\logo.png" />
     <None Remove="images\mplibrary.png" />
@@ -23,10 +29,6 @@
     <EmbeddedResource Include="images\logo.png" />
     <EmbeddedResource Include="images\mplibrary.png" />
     <EmbeddedResource Include="images\Skyward.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="NewFolder\" />
   </ItemGroup>
 
   <ItemGroup>
