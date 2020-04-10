@@ -4,9 +4,15 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="LibraryApp.Views.EventsPage">
+             x:Class="LibraryApp.Views.EventsPage"
+             Title="{Binding Title}">
     <ContentPage.Content>
         <StackLayout>
+            <ImageButton Source="{Binding Logo}"
+                   Command="{Binding HomePage}"
+                   Scale="1.4"
+                   Margin="0,0,0,40">
+            </ImageButton>
             <Label Text="Welcome to Events!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />

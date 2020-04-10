@@ -23,14 +23,14 @@ namespace LibraryApp
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/MainPage");
+            await NavigationService.NavigateAsync("NavigationPage/HomePage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
-            containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
-            containerRegistry.RegisterForNavigation<BooksPage, BooksPageViewModel>();
+            containerRegistry.RegisterForNavigation<HomePage, HomePageViewModel>();
+            containerRegistry.RegisterForNavigation<NewToTheLibraryPage, NewToTheLibraryPageViewModle>();
             containerRegistry.RegisterForNavigation<EventsPage, EventsPageViewModel>();
         }
     }

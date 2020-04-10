@@ -6,14 +6,15 @@ using Xamarin.Forms;
 
 namespace LibraryApp.ViewModels
 {
-    class EventsPageViewModel : ViewModelBase
+    class NewToTheLibraryPageViewModle : ViewModelBase
     {
         private INavigationService _navigationService;
-        public EventsPageViewModel(INavigationService navigationService)
+        public NewToTheLibraryPageViewModle(INavigationService navigationService)
             : base(navigationService)
         {
-            Title = "New Events Page";
-            _navigationService = navigationService; HomePage = new Command(navigate_home_execute);
+            Title = "New Books Page";
+            _navigationService = navigationService;
+            HomePage = new Command(navigate_home_execute);
         }
 
         /*-----------------Command variables-----------------*/
@@ -36,6 +37,5 @@ namespace LibraryApp.ViewModels
         /*----------------------Images-----------------------*/
         public ImageSource Logo => ImageSource.FromResource("LibraryApp.images.logo.png");
         /*----------------------Images-----------------------*/
-
     }
 }

@@ -10,15 +10,15 @@ using Xamarin.Forms;
 
 namespace LibraryApp.ViewModels
 {
-    public class MainPageViewModel : ViewModelBase
+    public class HomePageViewModel : ViewModelBase
     {
         private INavigationService _navigationService;
-        public MainPageViewModel(INavigationService navigationService)
+        public HomePageViewModel(INavigationService navigationService)
             : base(navigationService)
         {
             Title = "Main Page";
             _navigationService = navigationService;
-            Books = new Command(navigate__books_execute);
+            Books = new Command(navigate_books_execute);
             Events = new Command(navigate_events_execute);
         }
 
@@ -42,9 +42,9 @@ namespace LibraryApp.ViewModels
 
 
         /*--------------------Navagations--------------------*/
-        private async void navigate__books_execute()
+        private async void navigate_books_execute()
         {
-            await _navigationService.NavigateAsync(nameof(LibraryApp.Views.BooksPage));
+            await _navigationService.NavigateAsync(nameof(LibraryApp.Views.NewToTheLibraryPage));
         }
 
         private async void navigate_events_execute()
