@@ -80,12 +80,10 @@
 
                     <Image Source="{Binding Book}"
                        Grid.Column="0"
-                       Scale=".53"
-                       Margin="0,-150,-5,-150"></Image>
+                       Scale=".6"></Image>
                     <Image Source="{Binding Book2}"
                        Grid.Column="1"
-                       Scale=".6"
-                       Margin="-5,-150,0,-150"></Image>
+                       Scale=".6"></Image>
                 </Grid>
                 <Button Text="Books"
                         Command="{Binding Books}"

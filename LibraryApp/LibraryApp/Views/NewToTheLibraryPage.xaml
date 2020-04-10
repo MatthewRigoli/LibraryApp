@@ -5,17 +5,51 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="LibraryApp.Views.NewToTheLibraryPage"
-             Title="{Binding Title}">
+             Title="{Binding Title}"
+             BackgroundColor="#004777">
     <ContentPage.Content>
         <StackLayout>
             <ImageButton Source="{Binding Logo}"
                    Command="{Binding HomePage}"
-                   Scale="1.4"
-                   Margin="0,0,0,40">
+                   Scale="3"
+                   Margin="0,25,0,50"
+                         BackgroundColor="#004777">
             </ImageButton>
-            <Label Text="Welcome to New To The Library Page!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ScrollView>
+                <StackLayout HorizontalOptions="Center">
+                    <Label Text="New Book Of The Month!"
+                            HorizontalOptions="CenterAndExpand" 
+                            FontSize="Medium"
+                            FontFamily="Helvetica"/>
+                    <Image Source="{Binding Book}"
+                            HorizontalOptions="Center"
+                            Scale="1.4"
+                            Margin="0,30,0,50">
+                    </Image>
+                    <Label Text="Title: SkyWard"
+                               FontSize="Medium"
+                               FontFamily="Helvetica"
+                               HorizontalTextAlignment="Center"
+                               TextColor="White"></Label>
+                    <Label Text="Author: BrandSanderson"
+                               FontSize="Medium"
+                               FontFamily="Helvetica"
+                               HorizontalTextAlignment="Center"
+                               TextColor="White"></Label>
+                    <Label Text="Summary: All her life, Spensa has dreamed of becoming a pilot. 
+                               Of proving she's a hero like her father. She made it to the sky, 
+                               but the truths she learned about her father were crushing. 
+                               The rumors of his cowardice are true - he deserted his flight during battle against the Krell. 
+                               Worse, though, he turned against his team and attacked them. "
+                               HorizontalOptions="CenterAndExpand"
+                               FontSize="Medium"
+                               FontFamily="Helvetica"
+                               TextColor="White"></Label>
+                    <Label Text="Book Carousel"></Label>
+                    <Label Text="New Movie Of The Month"></Label>
+                    <Label Text="Movie Carousel"></Label>
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

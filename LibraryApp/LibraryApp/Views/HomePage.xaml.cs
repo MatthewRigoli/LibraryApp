@@ -35,16 +35,16 @@ namespace LibraryApp.Views
             {
                 // Send simple e-mail to single receiver without attachments, bcc, cc etc.
                 emailMessenger.SendEmail("lloydmckinnin@gmail.com",
-                                    "Xamarin Messaging Plugin",
-                                    "Well hello there from Xam.Messaging.Plugin");
+                                    "Have you taken care of steve yet?",
+                                    "Have you taken care of steve yet? We need to handle this before he catches on to us. I sent you a letter with all the information you need to handle this.");
 
                 // Alternatively use EmailBuilder fluent interface to construct more complex e-mail with multiple recipients, bcc, attachments etc.
                 var email = new EmailMessageBuilder()
-                  .To("lloydmckinnin@gmail.com")
-                  .Cc("plugins@xamarin.com")
+                  .To("maplecanyonoutdoors@gmail.com")
+                  .Cc("bolt1994@gmail.com")
                   .Bcc(new[] { "plugins@xamarin.com", "plugins@xamarin.com" })
-                  .Subject("Xamarin Messaging Plugin")
-                  .Body("Well hello there from Xam.Messaging.Plugin")
+                  .Subject("Have you taken care of steve yet?")
+                  .Body("Have you taken care of steve yet? We need to handle this before he catches on to us. I sent you a letter with all the information you need to handle this")
                   .Build();
 
                 emailMessenger.SendEmail(email);

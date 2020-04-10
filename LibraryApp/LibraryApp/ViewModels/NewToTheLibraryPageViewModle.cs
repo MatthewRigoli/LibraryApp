@@ -36,6 +36,7 @@ namespace LibraryApp.ViewModels
 
         /*----------------------Images-----------------------*/
         public ImageSource Logo => ImageSource.FromResource("LibraryApp.images.logo.png");
+        public ImageSource Book => ImageSource.FromResource("LibraryApp.images.Skyward.jpg");
         /*----------------------Images-----------------------*/
     }
 }
