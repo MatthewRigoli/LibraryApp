@@ -9,18 +9,19 @@
              BackgroundColor="#004777">
     <ContentPage.Content>
         <StackLayout>
-            <ImageButton Source="{Binding Logo}"
+            <!--<ImageButton Source="{Binding Logo}"
                    Command="{Binding HomePage}"
                    Scale="3"
                    Margin="0,25,0,50"
                          BackgroundColor="#004777">
-            </ImageButton>
+            </ImageButton>-->
             <ScrollView>
                 <StackLayout HorizontalOptions="Center">
                     <Label Text="New Book Of The Month!"
                             HorizontalOptions="CenterAndExpand" 
-                            FontSize="Medium"
-                            FontFamily="Helvetica"/>
+                            FontSize="Large"
+                            FontFamily="Helvetica"
+                           TextColor="White"/>
                     <Image Source="{Binding Book}"
                             HorizontalOptions="Center"
                             Scale="1.4"
@@ -36,18 +37,26 @@
                                FontFamily="Helvetica"
                                HorizontalTextAlignment="Center"
                                TextColor="White"></Label>
-                    <Label Text="Summary: All her life, Spensa has dreamed of becoming a pilot. 
-                               Of proving she's a hero like her father. She made it to the sky, 
-                               but the truths she learned about her father were crushing. 
-                               The rumors of his cowardice are true - he deserted his flight during battle against the Krell. 
-                               Worse, though, he turned against his team and attacked them. "
+                    <Label Text="Summary: All her life, Spensa has dreamed of becoming a pilot. Of proving she's a hero like her father. She made it to the sky, but the truths she learned about her father were crushing. The rumors of his cowardice are true - he deserted his flight during battle against the Krell. Worse, though, he turned against his team and attacked them. "
                                HorizontalOptions="CenterAndExpand"
                                FontSize="Medium"
                                FontFamily="Helvetica"
                                TextColor="White"></Label>
-                    <Label Text="Book Carousel"></Label>
-                    <Label Text="New Movie Of The Month"></Label>
-                    <Label Text="Movie Carousel"></Label>
+                    <Label Text="Book Carousel"
+                            HorizontalOptions="CenterAndExpand"
+                               FontSize="Medium"
+                               FontFamily="Helvetica"
+                               TextColor="White"></Label>
+                    <Label Text="New Movie Of The Month"
+                            HorizontalOptions="CenterAndExpand"
+                               FontSize="Large"
+                               FontFamily="Helvetica"
+                               TextColor="White"></Label>
+                    <Label Text="Movie Carousel"
+                            HorizontalOptions="CenterAndExpand"
+                               FontSize="Medium"
+                               FontFamily="Helvetica"
+                               TextColor="White"></Label>
                 </StackLayout>
             </ScrollView>
         </StackLayout>
