@@ -12,7 +12,7 @@ namespace LibraryApp.ViewModels
         public EventsPageViewModel(INavigationService navigationService)
             : base(navigationService)
         {
-            Title = "New Events Page";
+            Title = "Mount Pleasant Library Events";
             _navigationService = navigationService; HomePage = new Command(navigate_home_execute);
         }
 
