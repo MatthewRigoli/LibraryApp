@@ -16,7 +16,7 @@ namespace LibraryApp.ViewModels
         public HomePageViewModel(INavigationService navigationService)
             : base(navigationService)
         {
-            Title = "Main Page";
+            Title = "Mount Pleasant Library";
             _navigationService = navigationService;
             Books = new Command(navigate_books_execute);
             Events = new Command(navigate_events_execute);

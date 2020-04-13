@@ -2,17 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LibraryApp.Views.HomePage"
-             BackgroundColor="#EEEEEE"
+             BackgroundColor="White"
              Title="{Binding Title}">
 
     <ScrollView>
-        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-            <Image Source="{Binding Logo}"
-                   Scale="1.4"
-                   Margin="0,0,0,40"></Image>
-
+        <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
             <Grid 
-                BackgroundColor="#FB6107"
+                BackgroundColor="White"
                 Padding="0,0,0,10"
                 Margin="0,0,0,-7">
                 <Grid.RowDefinitions>
@@ -30,40 +26,47 @@
                        HorizontalOptions="StartAndExpand"
                        FontAttributes="Bold"
                        TextColor="White"
-                       Margin="0,0,-7,-10"
-                       BackgroundColor="#FB6107"></Button>
+                       Margin="15,0,-7,-10"
+                       BackgroundColor="RoyalBlue"
+                       CornerRadius="10"></Button>
 
                 <Button Text="Explore>"
                    Grid.Column="1"
                    HorizontalOptions="EndAndExpand"
                    TextColor="White"
                    Padding="10,10,2,10" 
-                   Margin="0,0,0,-10"
+                   Margin="0,0,15,-10"
                    FontAttributes="Bold"
-                   BackgroundColor="#FB6107"></Button>
+                   BackgroundColor="RoyalBlue"
+                   CornerRadius="10"></Button>
 
             </Grid>
-            <StackLayout BackgroundColor="#FCE80F"
+            <StackLayout BackgroundColor="DarkGray"
                          Padding="0,0,0,10"
-                         Margin="0,0,0,-7">
-                <Label Text="Up Coming Events!"
+                         Margin="15,30,15,15">
+                <Label Text="Library Events"
+                       Padding="0,5,0,0"
+                       TextColor="White"
                        HorizontalTextAlignment="Center"
                        FontSize="Medium"
                        FontFamily="Helvetica">
                 </Label>
                 <Image></Image>
-                <Button Text="Events"
+                <Button Text="Library Events"
+                        TextColor="White"
                         Command="{Binding Events}"
                         Padding="15,10,15,10"
                         Margin="0,20,0,0"
                         HorizontalOptions="Center"
-                        BackgroundColor="#FCE80F"
-                        BorderColor="Black"></Button>
+                        BackgroundColor="RoyalBlue"
+                        BorderColor="Black"
+                        CornerRadius="10"></Button>
             </StackLayout>
-            <StackLayout BackgroundColor="#004777"
+            <StackLayout BackgroundColor="DarkGray"
                          Padding="0,0,0,10"
-                         Margin="0,0,0,-7">
-                <Label Text="Books Of The Month!"
+                         Margin="15,15,15,15">
+                <Label Text="New This Month"
+                       Padding="0,5,0,0"
                        TextColor="White"
                        HorizontalTextAlignment="Center"
                        FontSize="Medium"
@@ -85,19 +88,24 @@
                        Grid.Column="1"
                        Scale=".6"></Image>
                 </Grid>
-                <Button Text="Books"
+                <Button Text="New to the Library"
                         Command="{Binding Books}"
                         TextColor="White"
                         Padding="15,10,15,10"
                         Margin="0,20,0,0"
                         HorizontalOptions="Center"
-                        BackgroundColor="#004777"
-                        BorderColor="Black"></Button>
+                        BackgroundColor="RoyalBlue"
+                        BorderColor="Black"
+                        CornerRadius="10"></Button>
             </StackLayout>
         
 
-            <StackLayout>
+            <StackLayout
+                BackgroundColor="DarkGray"
+                Margin="15,15,15,15">
                 <Label Text="Library Hours:" 
+                    BackgroundColor="DarkGray"
+                    TextColor="White"
                     FontSize="Medium" 
                     FontAttributes="Bold" 
                     HorizontalTextAlignment="Center"
@@ -106,21 +114,29 @@
                 <Label Text="Mon - Fri: 8am to 5pm" 
                        FontSize="Small" 
                        FontAttributes="Bold"
-                       HorizontalTextAlignment="Center"></Label>
+                       HorizontalTextAlignment="Center"
+                       TextColor="White"
+                       BackgroundColor="DarkGray"></Label>
 
                 <Label Text="Saturday: 9am to 7pm" 
                        FontSize="Small" 
                        FontAttributes="Bold"
-                       HorizontalTextAlignment="Center"></Label>
+                       HorizontalTextAlignment="Center"
+                       TextColor="White"
+                       BackgroundColor="DarkGray"></Label>
 
                 <Label Text="Sunday: Closed" 
                        FontSize="Small" 
                        FontAttributes="Bold"
-                       HorizontalTextAlignment="Center"></Label>
+                       HorizontalTextAlignment="Center"
+                       TextColor="White"
+                       BackgroundColor="DarkGray"></Label>
                 <Button Text="(435) 462-3240"
-                        Clicked="PhoneCall_Clicked"></Button>
+                        Clicked="PhoneCall_Clicked"
+                        CornerRadius="10"></Button>
                 <Button Text="Send Email"
-                        Clicked="Email_Clicked"></Button>
+                        Clicked="Email_Clicked"
+                        CornerRadius="10"></Button>
             </StackLayout>
         </StackLayout>
     </ScrollView>
