@@ -41,10 +41,11 @@ namespace LibraryApp.ViewModels
         public ImageSource Book => ImageSource.FromResource("LibraryApp.images.Skyward.jpg");
         public ImageSource Book2 => ImageSource.FromResource("LibraryApp.images.Skyward.jpg");
         public ImageSource Movie => ImageSource.FromResource("LibraryApp.images.Onward.jpg");
+        public ImageSource Movie2 => ImageSource.FromResource("LibraryApp.images.Onward.jpg");
         /*----------------------Images-----------------------*/
 
         /*---------------------TestCode----------------------*/
-        
+
         /*---------------------TestCode----------------------*/
     }
 }

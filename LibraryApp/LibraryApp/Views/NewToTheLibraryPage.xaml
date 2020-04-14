@@ -24,58 +24,60 @@
                                Style="{StaticResource NormalTextStyle}"></Label>
                     <Label Text="Summary: All her life, Spensa has dreamed of becoming a pilot. Of proving she's a hero like her father. She made it to the sky,  but the truths she learned about her father were crushing. The rumors of his cowardice are true - he deserted his flight during battle against the Krell. Worse, though, he turned against his team and attacked them. "
                                Style="{StaticResource NormalTextStyle}"></Label>
-                    <ScrollView Orientation="Horizontal">
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="auto"></RowDefinition>
-                            </Grid.RowDefinitions>
+                </StackLayout>
+            </Frame>
+            <Frame Style="{StaticResource FramDesign}">
+                <ScrollView Orientation="Horizontal">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"></RowDefinition>
+                        </Grid.RowDefinitions>
 
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"></ColumnDefinition>
-                                <ColumnDefinition Width="*"></ColumnDefinition>
-                                <ColumnDefinition Width="*"></ColumnDefinition>
-                                <ColumnDefinition Width="*"></ColumnDefinition>
-                                <ColumnDefinition Width="*"></ColumnDefinition>
-                                <ColumnDefinition Width="*"></ColumnDefinition>
-                                <ColumnDefinition Width="*"></ColumnDefinition>
-                                <ColumnDefinition Width="*"></ColumnDefinition>
-                            </Grid.ColumnDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
 
-                            <Image Source="{Binding Book2}"
+                        <Image Source="{Binding Book2}"
                                    Style="{StaticResource ImageDesign}"
                                    Grid.Row="0"
                                    Grid.Column="0"/>
-                            <Image Source="{Binding Book2}"
+                        <Image Source="{Binding Book2}"
                                    Style="{StaticResource ImageDesign}"
                                    Grid.Row="0"
                                    Grid.Column="1"/>
-                            <Image Source="{Binding Book2}"
+                        <Image Source="{Binding Book2}"
                                    Style="{StaticResource ImageDesign}"
                                    Grid.Row="0"
                                    Grid.Column="2"/>
-                            <Image Source="{Binding Book2}"
+                        <Image Source="{Binding Book2}"
                                    Style="{StaticResource ImageDesign}"
                                    Grid.Row="0"
                                    Grid.Column="3"/>
-                            <Image Source="{Binding Book2}"
+                        <Image Source="{Binding Book2}"
                                    Style="{StaticResource ImageDesign}"
                                    Grid.Row="0"
                                    Grid.Column="4"/>
-                            <Image Source="{Binding Book2}"
+                        <Image Source="{Binding Book2}"
                                    Style="{StaticResource ImageDesign}"
                                    Grid.Row="0"
                                    Grid.Column="5"/>
-                            <Image Source="{Binding Book2}"
+                        <Image Source="{Binding Book2}"
                                    Style="{StaticResource ImageDesign}"
                                    Grid.Row="0"
                                    Grid.Column="6"/>
-                            <Image Source="{Binding Book2}"
+                        <Image Source="{Binding Book2}"
                                    Style="{StaticResource ImageDesign}"
                                    Grid.Row="0"
                                    Grid.Column="7"/>
-                        </Grid>
-                    </ScrollView>    
-                </StackLayout>
+                    </Grid>
+                </ScrollView>
             </Frame>
             <Frame Style="{StaticResource FramDesign}">
                 <StackLayout>
@@ -91,8 +93,60 @@
                                Style="{StaticResource NormalTextStyle}"></Label>
                     <Label Text="Raiting: PG"
                                Style="{StaticResource NormalTextStyle}"></Label>
-                    <Label Text="Movie Carousel"></Label>
                 </StackLayout>
+            </Frame>
+            <Frame Style="{StaticResource FramDesign}">
+                <ScrollView Orientation="Horizontal">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="{Binding Movie2}"
+                                   Style="{StaticResource ImageMovieDesign}"
+                                   Grid.Row="0"
+                                   Grid.Column="0"/>
+                        <Image Source="{Binding Movie2}"
+                                   Style="{StaticResource ImageMovieDesign}"
+                                   Grid.Row="0"
+                                   Grid.Column="1"/>
+                        <Image Source="{Binding Movie2}"
+                                   Style="{StaticResource ImageMovieDesign}"
+                                   Grid.Row="0"
+                                   Grid.Column="2"/>
+                        <Image Source="{Binding Movie2}"
+                                   Style="{StaticResource ImageMovieDesign}"
+                                   Grid.Row="0"
+                                   Grid.Column="3"/>
+                        <Image Source="{Binding Movie2}"
+                                   Style="{StaticResource ImageMovieDesign}"
+                                   Grid.Row="0"
+                                   Grid.Column="4"/>
+                        <Image Source="{Binding Movie2}"
+                                   Style="{StaticResource ImageMovieDesign}"
+                                   Grid.Row="0"
+                                   Grid.Column="5"/>
+                        <Image Source="{Binding Movie2}"
+                                   Style="{StaticResource ImageMovieDesign}"
+                                   Grid.Row="0"
+                                   Grid.Column="6"/>
+                        <Image Source="{Binding Movie2}"
+                                   Style="{StaticResource ImageMovieDesign}"
+                                   Grid.Row="0"
+                                   Grid.Column="7"/>
+                    </Grid>
+                </ScrollView>
             </Frame>
         </StackLayout>
     </ScrollView>
