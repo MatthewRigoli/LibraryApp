@@ -1,6 +1,7 @@
 ﻿using Prism.Navigation;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
 using Xamarin.Forms;
 
@@ -25,6 +26,7 @@ namespace LibraryApp.ViewModels
             get { return homePage; }
             set { homePage = value; }
         }
+
         /*-----------------Command variables-----------------*/
 
         /*--------------------Navagations--------------------*/
@@ -32,11 +34,17 @@ namespace LibraryApp.ViewModels
         {
             await _navigationService.NavigateAsync(nameof(LibraryApp.Views.HomePage));
         }
+     
         /*--------------------Navagations--------------------*/
 
         /*----------------------Images-----------------------*/
         public ImageSource Book => ImageSource.FromResource("LibraryApp.images.Skyward.jpg");
+        public ImageSource Book2 => ImageSource.FromResource("LibraryApp.images.Skyward.jpg");
         public ImageSource Movie => ImageSource.FromResource("LibraryApp.images.Onward.jpg");
         /*----------------------Images-----------------------*/
+
+        /*---------------------TestCode----------------------*/
+        
+        /*---------------------TestCode----------------------*/
     }
 }

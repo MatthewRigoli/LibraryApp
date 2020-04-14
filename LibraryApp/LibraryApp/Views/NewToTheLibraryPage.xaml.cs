@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,7 @@ namespace LibraryApp.Views
 
     [XamlCompilation(XamlCompilationOptions.Compile)]
 
-    public partial class NewToTheLibraryPage : ContentPage
+    public partial class NewToTheLibraryPage : ContentPage, INotifyPropertyChanged
     {
         public NewToTheLibraryPage()
         {

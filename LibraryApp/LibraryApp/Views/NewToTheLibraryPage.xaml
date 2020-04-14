@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:LibraryApp.Models"
              mc:Ignorable="d"
              x:Class="LibraryApp.Views.NewToTheLibraryPage"
              Title="{Binding Title}"
@@ -24,6 +24,57 @@
                                Style="{StaticResource NormalTextStyle}"></Label>
                     <Label Text="Summary: All her life, Spensa has dreamed of becoming a pilot. Of proving she's a hero like her father. She made it to the sky,  but the truths she learned about her father were crushing. The rumors of his cowardice are true - he deserted his flight during battle against the Krell. Worse, though, he turned against his team and attacked them. "
                                Style="{StaticResource NormalTextStyle}"></Label>
+                    <ScrollView Orientation="Horizontal">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Source="{Binding Book2}"
+                                   Style="{StaticResource ImageDesign}"
+                                   Grid.Row="0"
+                                   Grid.Column="0"/>
+                            <Image Source="{Binding Book2}"
+                                   Style="{StaticResource ImageDesign}"
+                                   Grid.Row="0"
+                                   Grid.Column="1"/>
+                            <Image Source="{Binding Book2}"
+                                   Style="{StaticResource ImageDesign}"
+                                   Grid.Row="0"
+                                   Grid.Column="2"/>
+                            <Image Source="{Binding Book2}"
+                                   Style="{StaticResource ImageDesign}"
+                                   Grid.Row="0"
+                                   Grid.Column="3"/>
+                            <Image Source="{Binding Book2}"
+                                   Style="{StaticResource ImageDesign}"
+                                   Grid.Row="0"
+                                   Grid.Column="4"/>
+                            <Image Source="{Binding Book2}"
+                                   Style="{StaticResource ImageDesign}"
+                                   Grid.Row="0"
+                                   Grid.Column="5"/>
+                            <Image Source="{Binding Book2}"
+                                   Style="{StaticResource ImageDesign}"
+                                   Grid.Row="0"
+                                   Grid.Column="6"/>
+                            <Image Source="{Binding Book2}"
+                                   Style="{StaticResource ImageDesign}"
+                                   Grid.Row="0"
+                                   Grid.Column="7"/>
+                        </Grid>
+                    </ScrollView>    
                 </StackLayout>
             </Frame>
             <Frame Style="{StaticResource FramDesign}">
