@@ -5,22 +5,25 @@
              x:Class="LibraryApp.App">
     <Application.Resources>
         <ResourceDictionary>
-            <Color x:Key="MainBackgroundColor">#004777</Color>
-            <Color x:Key="HeadingTextColor">White</Color>
-            <Color x:Key="NormalTextColor">White</Color>
-            <Color x:Key="ButtonTextColor">White</Color>
+            <Color x:Key="MainBackgroundColor">#E6E6E6</Color>
             <Style x:Key="LabelHeadingStyle" TargetType="Label">
                 <Setter Property="FontFamily" Value="Helvetica"/>
                 <Setter Property="FontSize" Value="Large"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
                 <Setter Property="HorizontalOptions" Value="Center"/>
-                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="TextColor" Value="Black"/>
             </Style>
             <Style x:Key="NormalTextStyle" TargetType="Label">
                 <Setter Property="FontFamily" Value="Helvetica"/>
                 <Setter Property="FontSize" Value="Medium"/>
                 <Setter Property="HorizontalOptions" Value="Center"/>
-                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="TextColor" Value="#60000000"/>
+            </Style>
+            <Style x:Key="FramDesign" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="#F1F1F1"/>
+                <Setter Property="Margin" Value="5, 5, 5, 10" />
+                <Setter Property="Padding" Value="20,15" />
+                <Setter Property="CornerRadius" Value="10" />
             </Style>
         </ResourceDictionary>
     </Application.Resources>
