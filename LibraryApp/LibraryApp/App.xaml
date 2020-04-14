@@ -5,7 +5,7 @@
              x:Class="LibraryApp.App">
     <Application.Resources>
         <ResourceDictionary>
-            <Color x:Key="MainBackgroundColor">#E6E6E6</Color>
+            <Color x:Key="MainBackgroundColor">White</Color>
             <Style x:Key="LabelHeadingStyle" TargetType="Label">
                 <Setter Property="FontFamily" Value="Helvetica"/>
                 <Setter Property="FontSize" Value="Large"/>
@@ -22,7 +22,7 @@
             <Style x:Key="FramDesign" TargetType="Frame">
                 <Setter Property="BackgroundColor" Value="#F1F1F1"/>
                 <Setter Property="HasShadow" Value="True"/>
-                <Setter Property="Margin" Value="5, 5, 5, 10" />
+                <Setter Property="Margin" Value="10, 5, 10, 10" />
                 <Setter Property="Padding" Value="20,15" />
                 <Setter Property="CornerRadius" Value="10" />
             </Style>
