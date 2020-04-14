@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -7,35 +7,42 @@
              x:Class="LibraryApp.Views.NewToTheLibraryPage"
              Title="{Binding Title}"
              BackgroundColor="{StaticResource MainBackgroundColor}">
-    <ContentPage>
-        <ScrollView>
-            <StackLayout>
-                <Frame Style="{StaticResource FramDesign}">
-                    <StackLayout HorizontalOptions="Center">
-                        <Label Text="New Book Of The Month!"
+    <ScrollView>
+        <StackLayout>
+            <Frame Style="{StaticResource FramDesign}">
+                <StackLayout HorizontalOptions="Center">
+                    <Label Text="New Book Of The Month!"
                                Style="{StaticResource LabelHeadingStyle}"/>
-                        <Image Source="{Binding Book}"
+                    <Image Source="{Binding Book}"
                                 HorizontalOptions="Center"
                                 Scale="1.4"
-                                Margin="0,30,0,50">
-                        </Image>
-                        <Label Text="Title: SkyWard"
+                                Margin="0,50,0,50">
+                    </Image>
+                    <Label Text="Title: SkyWard"
                                Style="{StaticResource NormalTextStyle}"></Label>
-                        <Label Text="Author: BrandSanderson"
+                    <Label Text="Author: BrandSanderson"
                                Style="{StaticResource NormalTextStyle}"></Label>
-                        <Label Text="Summary: All her life, Spensa has dreamed of becoming a pilot. Of proving she's a hero like her father. She made it to the sky,  but the truths she learned about her father were crushing. The rumors of his cowardice are true - he deserted his flight during battle against the Krell. Worse, though, he turned against his team and attacked them. "
+                    <Label Text="Summary: All her life, Spensa has dreamed of becoming a pilot. Of proving she's a hero like her father. She made it to the sky,  but the truths she learned about her father were crushing. The rumors of his cowardice are true - he deserted his flight during battle against the Krell. Worse, though, he turned against his team and attacked them. "
                                Style="{StaticResource NormalTextStyle}"></Label>
-                        <Label Text="Book Carousel"></Label>
-                    </StackLayout>
-                </Frame>
-                <Frame Style="{StaticResource FramDesign}">
-                    <StackLayout>
-                        <Label Text="New Movie Of The Month"
-                               Style="{StaticResource LabelHeadingStyle}"></Label>
-                        <Label Text="Movie Carousel"></Label>
-                    </StackLayout>
-                </Frame>
-            </StackLayout>
-        </ScrollView>
-    </ContentPage>
-</CarouselPage>
+                </StackLayout>
+            </Frame>
+            <Frame Style="{StaticResource FramDesign}">
+                <StackLayout>
+                    <Label Text="New Movie Of The Month"
+                               Style="{StaticResource LabelHeadingStyle}">
+                    </Label>
+                    <Image Source="{Binding Movie}"
+                                HorizontalOptions="Center"
+                                Scale=".6"
+                                Margin="0,-90,0,-90">
+                    </Image>
+                    <Label Text="Two elven brothers embark on a quest to bring their father back for one day."
+                               Style="{StaticResource NormalTextStyle}"></Label>
+                    <Label Text="Raiting: PG"
+                               Style="{StaticResource NormalTextStyle}"></Label>
+                    <Label Text="Movie Carousel"></Label>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

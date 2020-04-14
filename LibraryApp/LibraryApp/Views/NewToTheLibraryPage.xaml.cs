@@ -12,7 +12,7 @@ namespace LibraryApp.Views
 
     [XamlCompilation(XamlCompilationOptions.Compile)]
 
-    public partial class NewToTheLibraryPage : CarouselPage
+    public partial class NewToTheLibraryPage : ContentPage
     {
         public NewToTheLibraryPage()
         {

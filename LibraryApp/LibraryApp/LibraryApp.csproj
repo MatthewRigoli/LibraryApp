@@ -14,6 +14,7 @@
     <None Remove="images\kill.jpg" />
     <None Remove="images\logo.png" />
     <None Remove="images\mplibrary.png" />
+    <None Remove="images\Onward.jpg" />
     <None Remove="images\Skyward.jpg" />
   </ItemGroup>
 
@@ -28,6 +29,7 @@
     <EmbeddedResource Include="images\kill.jpg" />
     <EmbeddedResource Include="images\logo.png" />
     <EmbeddedResource Include="images\mplibrary.png" />
+    <EmbeddedResource Include="images\Onward.jpg" />
     <EmbeddedResource Include="images\Skyward.jpg" />
   </ItemGroup>
 
