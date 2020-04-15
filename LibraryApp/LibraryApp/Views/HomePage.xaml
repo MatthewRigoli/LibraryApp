@@ -46,13 +46,13 @@
                          Padding="0,0,0,10"
                          Margin="15,30,15,15">
                     <Label Text="Library Events"
-                       Padding="0,5,0,0"
+                       Padding="0,5,0,15"
                        TextColor="Black"
                        HorizontalTextAlignment="Center"
                        FontSize="Medium"
                        FontFamily="Helvetica">
                     </Label>
-                    <Image></Image>
+                    <Image Source="{Binding EventImage}"></Image>
                     <Button Text="Library Events"
                         TextColor="White"
                         Command="{Binding Events}"

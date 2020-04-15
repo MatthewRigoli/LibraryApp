@@ -22,7 +22,7 @@
             <Style x:Key="FramDesign" TargetType="Frame">
                 <Setter Property="BackgroundColor" Value="#F1F1F1"/>
                 <Setter Property="HasShadow" Value="True"/>
-                <Setter Property="Margin" Value="10, 5, 10, 10" />
+                <Setter Property="Margin" Value="10, 10, 10, 10" />
                 <Setter Property="Padding" Value="20,15" />
                 <Setter Property="CornerRadius" Value="10" />
             </Style>
