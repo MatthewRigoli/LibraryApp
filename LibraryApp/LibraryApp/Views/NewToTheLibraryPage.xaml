@@ -148,6 +148,10 @@
                     </Grid>
                 </ScrollView>
             </Frame>
+            <Button Text="Check Out Our Catalog Page!"
+                    Command="{Binding CatalogPage}"
+                    Style="{StaticResource BasicButton}">
+            </Button>
         </StackLayout>
     </ScrollView>
 </ContentPage>

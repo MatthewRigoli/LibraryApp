@@ -23,15 +23,15 @@
                 <Button Text="+Library Information" 
                        Command="{Binding InformationPage}"
                        Grid.Column="0"
-                       HorizontalOptions="StartAndExpand"
-                       FontAttributes="Bold"
                        Style="{StaticResource BasicButton}"
-                       Margin="15,0,-7,-10"></Button>
+                       FontAttributes="Bold"
+                       Padding="0,0,0,0"
+                       Margin="15,0,0,-10"></Button>
 
                 <Button Text="Explore>"
                    Grid.Column="1"
-                   HorizontalOptions="EndAndExpand"
                    Style="{StaticResource BasicButton}"
+                   Padding="25,0,25,0"
                    Margin="0,0,15,-10"
                    FontAttributes="Bold"></Button>
 

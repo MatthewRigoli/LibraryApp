@@ -34,11 +34,12 @@
                 <Setter Property="Margin" Value="-118,-180,-118,-180"/>
             </Style>
             <Style x:Key="BasicButton" TargetType="Button">
-                <Setter Property="TextColor" Value="White"></Setter>
-                <Setter Property="Padding" Value="15,10,15,10"></Setter>
-                <Setter Property="HorizontalOptions" Value="Center"></Setter>
-                <Setter Property="BackgroundColor" Value="RoyalBlue"></Setter>
-                <Setter Property="CornerRadius" Value="10"></Setter>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="Padding" Value="15,10,15,10"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="BackgroundColor" Value="RoyalBlue"/>
+                <Setter Property="CornerRadius" Value="10"/>
+                
             </Style>
         </ResourceDictionary>
     </Application.Resources>

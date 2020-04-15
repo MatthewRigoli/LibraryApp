@@ -16,6 +16,7 @@ namespace LibraryApp.ViewModels
             Title = "New Books Page";
             _navigationService = navigationService;
             HomePage = new Command(navigate_home_execute);
+            CatalogPage = new Command(navigate_catalog_execute);
         }
 
         /*-----------------Command variables-----------------*/
@@ -27,6 +28,14 @@ namespace LibraryApp.ViewModels
             set { homePage = value; }
         }
 
+        private Command catalogPage;
+
+        public Command CatalogPage
+        {
+            get { return catalogPage; }
+            set { catalogPage = value; }
+        }
+
         /*-----------------Command variables-----------------*/
 
         /*--------------------Navagations--------------------*/
@@ -34,7 +43,12 @@ namespace LibraryApp.ViewModels
         {
             await _navigationService.NavigateAsync(nameof(LibraryApp.Views.HomePage));
         }
-     
+
+        private async void navigate_catalog_execute()
+        {
+            await _navigationService.NavigateAsync(nameof(LibraryApp.Views.CatalogPage));
+        }
+
         /*--------------------Navagations--------------------*/
 
         /*----------------------Images-----------------------*/
@@ -43,9 +57,5 @@ namespace LibraryApp.ViewModels
         public ImageSource Movie => ImageSource.FromResource("LibraryApp.images.Onward.jpg");
         public ImageSource Movie2 => ImageSource.FromResource("LibraryApp.images.Onward.jpg");
         /*----------------------Images-----------------------*/
-
-        /*---------------------TestCode----------------------*/
-
-        /*---------------------TestCode----------------------*/
     }
 }

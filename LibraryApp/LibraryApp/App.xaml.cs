@@ -32,6 +32,7 @@ namespace LibraryApp
             containerRegistry.RegisterForNavigation<HomePage, HomePageViewModel>();
             containerRegistry.RegisterForNavigation<NewToTheLibraryPage, NewToTheLibraryPageViewModle>();
             containerRegistry.RegisterForNavigation<EventsPage, EventsPageViewModel>();
+            containerRegistry.RegisterForNavigation<CatalogPage, CatalogPageViewModel>();
         }
     }
 }
