@@ -47,7 +47,7 @@
                          Margin="15,30,15,15">
                     <Label Text="Library Events"
                        Padding="0,5,0,15"
-                       TextColor="Black"
+                       TextColor="RoyalBlue"
                        HorizontalTextAlignment="Center"
                        FontSize="Medium"
                        FontFamily="Helvetica">
@@ -60,7 +60,7 @@
                         Margin="0,20,0,0"
                         HorizontalOptions="Center"
                         BackgroundColor="RoyalBlue"
-                        BorderColor="Black"
+                        BorderColor="White"
                         CornerRadius="10"></Button>
                 </StackLayout>
             </Frame>
@@ -70,7 +70,7 @@
                          Margin="15,15,15,15">
                     <Label Text="New This Month"
                        Padding="0,5,0,0"
-                       TextColor="Black"
+                       TextColor="RoyalBlue"
                        HorizontalTextAlignment="Center"
                        FontSize="Medium"
                        FontFamily="Helvetica"></Label>
@@ -98,7 +98,7 @@
                         Margin="0,20,0,0"
                         HorizontalOptions="Center"
                         BackgroundColor="RoyalBlue"
-                        BorderColor="Black"
+                        BorderColor="White"
                         CornerRadius="10"></Button>
                 </StackLayout>
             </Frame>
@@ -109,7 +109,7 @@
                 Margin="15,15,15,15">
                     <Label Text="Library Hours:" 
                     BackgroundColor="#DAE5E9"
-                    TextColor="Black"
+                    TextColor="RoyalBlue"
                     FontSize="Medium" 
                     FontAttributes="Bold" 
                     HorizontalTextAlignment="Center"
@@ -119,19 +119,19 @@
                        FontSize="Small" 
                        FontAttributes="Bold"
                        HorizontalTextAlignment="Center"
-                       TextColor="Black"></Label>
+                       TextColor="RoyalBlue"></Label>
 
                     <Label Text="Saturday: 9am to 7pm" 
                        FontSize="Small" 
                        FontAttributes="Bold"
                        HorizontalTextAlignment="Center"
-                       TextColor="Black"></Label>
+                       TextColor="RoyalBlue"></Label>
 
                     <Label Text="Sunday: Closed" 
                        FontSize="Small" 
                        FontAttributes="Bold"
                        HorizontalTextAlignment="Center"
-                       TextColor="Black"></Label>
+                       TextColor="RoyalBlue"></Label>
                     <Button Text="(435) 462-3240"
                         Clicked="PhoneCall_Clicked"
                         CornerRadius="10"></Button>
