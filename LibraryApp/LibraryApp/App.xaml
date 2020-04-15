@@ -20,7 +20,7 @@
                 <Setter Property="TextColor" Value="#60000000"/>
             </Style>
             <Style x:Key="FramDesign" TargetType="Frame">
-                <Setter Property="BackgroundColor" Value="#F1F1F1"/>
+                <Setter Property="BackgroundColor" Value="#DAE5E9"/>
                 <Setter Property="HasShadow" Value="True"/>
                 <Setter Property="Margin" Value="10, 10, 10, 10" />
                 <Setter Property="Padding" Value="20,15" />

@@ -42,7 +42,7 @@
 
             </Grid>
             <Frame Style="{StaticResource FramDesign}">
-                <StackLayout BackgroundColor="#F1F1F1"
+                <StackLayout BackgroundColor="#DAE5E9"
                          Padding="0,0,0,10"
                          Margin="15,30,15,15">
                     <Label Text="Library Events"
@@ -65,7 +65,7 @@
                 </StackLayout>
             </Frame>
             <Frame Style="{StaticResource FramDesign}">
-                <StackLayout BackgroundColor="#F1F1F1"
+                <StackLayout BackgroundColor="#DAE5E9"
                          Padding="0,0,0,10"
                          Margin="15,15,15,15">
                     <Label Text="New This Month"
@@ -105,10 +105,10 @@
 
             <Frame Style="{StaticResource FramDesign}">
                 <StackLayout
-                BackgroundColor="#F1F1F1"
+                BackgroundColor="#DAE5E9"
                 Margin="15,15,15,15">
                     <Label Text="Library Hours:" 
-                    BackgroundColor="#F1F1F1"
+                    BackgroundColor="#DAE5E9"
                     TextColor="Black"
                     FontSize="Medium" 
                     FontAttributes="Bold" 
