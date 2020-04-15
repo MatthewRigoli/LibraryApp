@@ -11,13 +11,13 @@
                 <Setter Property="FontSize" Value="Large"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
                 <Setter Property="HorizontalOptions" Value="Center"/>
-                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="TextColor" Value="RoyalBlue"/>
             </Style>
             <Style x:Key="NormalTextStyle" TargetType="Label">
                 <Setter Property="FontFamily" Value="Helvetica"/>
                 <Setter Property="FontSize" Value="Medium"/>
-                <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
-                <Setter Property="TextColor" Value="#60000000"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="TextColor" Value="RoyalBlue"/>
             </Style>
             <Style x:Key="FramDesign" TargetType="Frame">
                 <Setter Property="BackgroundColor" Value="#DAE5E9"/>
@@ -32,6 +32,13 @@
             <Style x:Key="ImageMovieDesign" TargetType="Image">
                 <Setter Property="Scale" Value=".35"/>
                 <Setter Property="Margin" Value="-118,-180,-118,-180"/>
+            </Style>
+            <Style x:Key="BasicButton" TargetType="Button">
+                <Setter Property="TextColor" Value="White"></Setter>
+                <Setter Property="Padding" Value="15,10,15,10"></Setter>
+                <Setter Property="HorizontalOptions" Value="Center"></Setter>
+                <Setter Property="BackgroundColor" Value="RoyalBlue"></Setter>
+                <Setter Property="CornerRadius" Value="10"></Setter>
             </Style>
         </ResourceDictionary>
     </Application.Resources>
