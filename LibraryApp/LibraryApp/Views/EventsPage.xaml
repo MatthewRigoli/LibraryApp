@@ -8,14 +8,47 @@
              Title="{Binding Title}">
     <ContentPage.Content>
         <StackLayout>
-            <ImageButton Source="{Binding Logo}"
-                   Command="{Binding HomePage}"
-                   Scale="1.4"
-                   Margin="0,0,0,40">
-            </ImageButton>
-            <Label Text="Welcome to Events!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Frame Style="{StaticResource FramDesign}">
+                <StackLayout>
+                    <Label 
+                    Text="April 2020"
+                    Style="{StaticResource LabelHeadingStyle}"
+                />
+                    <Label
+                    Text="April 15th, 2020"
+                    Style="{StaticResource NormalTextStyle}"
+                    FontSize="Small" 
+                />
+                    <Label
+                    Text="April 20th, 2020"
+                    Style="{StaticResource NormalTextStyle}"
+                    FontSize="Small" 
+                />
+                </StackLayout>
+            </Frame>
+            <Frame Style="{StaticResource FramDesign}">
+                <StackLayout>
+                    <Label 
+                    Text="May 2020"
+                    Style="{StaticResource LabelHeadingStyle}"
+                />
+                    <Label
+                    Text="May 4th, 2020"
+                    Style="{StaticResource NormalTextStyle}"
+                    FontSize="Small" 
+                />
+                    <Label
+                    Text="May 15th, 2020"
+                    Style="{StaticResource NormalTextStyle}"
+                    FontSize="Small" 
+                />
+                    <Label
+                    Text="May 30th, 2020"
+                    Style="{StaticResource NormalTextStyle}"
+                    FontSize="Small" 
+                />
+                </StackLayout>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
