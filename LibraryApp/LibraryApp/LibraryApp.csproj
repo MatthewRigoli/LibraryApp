@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="images\1stEventImage.png" />
+    <None Remove="images\2ndEventImage.jpg" />
+    <None Remove="images\3rdEventImage.jpg" />
+    <None Remove="images\4thEventImage.jpg" />
+    <None Remove="images\5thEventImage.jpg" />
     <None Remove="images\kill.jpg" />
     <None Remove="images\logo.png" />
     <None Remove="images\MainPageEvent.png" />
@@ -21,6 +26,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="images\1stEventImage.png" />
+    <EmbeddedResource Include="images\2ndEventImage.jpg" />
+    <EmbeddedResource Include="images\3rdEventImage.jpg" />
+    <EmbeddedResource Include="images\4thEventImage.jpg" />
+    <EmbeddedResource Include="images\5thEventImage.jpg" />
     <EmbeddedResource Include="images\kill.jpg" />
     <EmbeddedResource Include="images\logo.png" />
     <EmbeddedResource Include="images\MainPageEvent.png" />

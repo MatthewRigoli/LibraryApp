@@ -34,7 +34,11 @@ namespace LibraryApp.ViewModels
         /*--------------------Navagations--------------------*/
 
         /*----------------------Images-----------------------*/
-        public ImageSource Logo => ImageSource.FromResource("LibraryApp.images.logo.png");
+        public ImageSource EventImage1 => ImageSource.FromResource("LibraryApp.images.1stEventImage.png");
+        public ImageSource EventImage2 => ImageSource.FromResource("LibraryApp.images.2ndEventImage.jpg");
+        public ImageSource EventImage3 => ImageSource.FromResource("LibraryApp.images.3rdEventImage.jpg");
+        public ImageSource EventImage4 => ImageSource.FromResource("LibraryApp.images.4thEventImage.jpg");
+        public ImageSource EventImage5 => ImageSource.FromResource("LibraryApp.images.5thEventImage.jpg");
         /*----------------------Images-----------------------*/
 
     }

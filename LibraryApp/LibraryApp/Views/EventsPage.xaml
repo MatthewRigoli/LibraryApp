@@ -7,48 +7,55 @@
              x:Class="LibraryApp.Views.EventsPage"
              Title="{Binding Title}">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout>
             <Frame Style="{StaticResource FramDesign}">
                 <StackLayout>
                     <Label 
                     Text="April 2020"
                     Style="{StaticResource LabelHeadingStyle}"
-                />
+                    />
                     <Label
                     Text="April 15th, 2020"
                     Style="{StaticResource NormalTextStyle}"
-                    FontSize="Small" 
-                />
+                    FontSize="Small"
+                    />
+                    <Image Source="{Binding EventImage1}"></Image>
                     <Label
                     Text="April 20th, 2020"
                     Style="{StaticResource NormalTextStyle}"
                     FontSize="Small" 
-                />
+                    />
+                    <Image Source="{Binding EventImage2}"></Image>
                 </StackLayout>
             </Frame>
-            <Frame Style="{StaticResource FramDesign}">
-                <StackLayout>
-                    <Label 
-                    Text="May 2020"
-                    Style="{StaticResource LabelHeadingStyle}"
-                />
-                    <Label
-                    Text="May 4th, 2020"
-                    Style="{StaticResource NormalTextStyle}"
-                    FontSize="Small" 
-                />
-                    <Label
+                <Frame Style="{StaticResource FramDesign}">
+                    <StackLayout>
+                        <Label 
+                            Text="May 2020"
+                            Style="{StaticResource LabelHeadingStyle}"
+                            />
+                        <Label
+                            Text="May 4th, 2020"
+                            Style="{StaticResource NormalTextStyle}"
+                            FontSize="Small" 
+                        />
+                        <Image Source="{Binding EventImage3}"></Image>
+                        <Label
                     Text="May 15th, 2020"
                     Style="{StaticResource NormalTextStyle}"
                     FontSize="Small" 
-                />
-                    <Label
+                    />
+                        <Image Source="{Binding EventImage4}"></Image>
+                        <Label
                     Text="May 30th, 2020"
                     Style="{StaticResource NormalTextStyle}"
                     FontSize="Small" 
-                />
-                </StackLayout>
-            </Frame>
-        </StackLayout>
+                    />
+                        <Image Source="{Binding EventImage5}"></Image>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
