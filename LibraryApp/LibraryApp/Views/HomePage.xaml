@@ -4,10 +4,10 @@
              x:Class="LibraryApp.Views.HomePage"
              BackgroundColor="White"
              Title="{Binding Title}">
-
-    <ScrollView>
+    <Grid>
+        <ScrollView Grid.Row="0">
         <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
-            <Grid 
+            <!--<Grid 
                 BackgroundColor="White"
                 Padding="0,0,0,10"
                 Margin="0,15,0,-7">
@@ -35,7 +35,7 @@
                    Margin="0,0,15,-10"
                    FontAttributes="Bold"></Button>
 
-            </Grid>
+            </Grid>-->
             <Frame Style="{StaticResource FramDesign}">
                 <StackLayout BackgroundColor="#DAE5E9"
                          Padding="0,0,0,10"
@@ -100,18 +100,20 @@
                        FontAttributes="Bold"
                        Style="{StaticResource NormalTextStyle}"></Label>
 
-                    <Label Text="Sunday: Closed" 
+                    <Label Text="Sunday: Closed all day" 
                        FontSize="Small" 
                        FontAttributes="Bold"
                        Style="{StaticResource NormalTextStyle}"></Label>
                     <Button Text="(435) 462-3240"
                         Clicked="PhoneCall_Clicked"
                         CornerRadius="10"></Button>
-                    <Button Text="Send Email"
+                        <Button Text="Send Email"
                         Clicked="Email_Clicked"
                         CornerRadius="10"></Button>
-                </StackLayout>
+                    </StackLayout>
             </Frame>
         </StackLayout>
     </ScrollView>
+        <Button Text="Catalog" Grid.Row="0" HorizontalOptions="End" VerticalOptions="Start" Margin="0,-46,10,0" Style="{StaticResource BasicButton}" />
+    </Grid>
 </ContentPage>
