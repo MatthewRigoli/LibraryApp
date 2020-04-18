@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChuckNorrisFacts.LoginView">
+    <ContentView.Content>
+        <StackLayout>
+            <StackLayout x:Name="LoginPanel">
+                <Button Clicked="LoginClicked" Text="Login"></Button>
+                <Label x:Name="ErrorLabel" TextColor="#FF0000"></Label>
+            </StackLayout>
+            <StackLayout x:Name="LogoutPanel" IsVisible="False" Orientation="Horizontal">
+                <Label x:Name="LoggedInLabel" ></Label>
+                <Button Clicked="LogoutClicked" Text="Logout"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
