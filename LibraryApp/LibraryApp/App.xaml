@@ -16,7 +16,7 @@
             <Style x:Key="NormalTextStyle" TargetType="Label">
                 <Setter Property="FontFamily" Value="Helvetica"/>
                 <Setter Property="FontSize" Value="Medium"/>
-                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
                 <Setter Property="TextColor" Value="RoyalBlue"/>
             </Style>
             <Style x:Key="FramDesign" TargetType="Frame">
@@ -26,8 +26,17 @@
                 <Setter Property="Padding" Value="20,15" />
                 <Setter Property="CornerRadius" Value="10" />
             </Style>
+            <Style x:Key="CatalogFrameDesign" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="#DAE5E9"/>
+                <Setter Property="HasShadow" Value="True"/>
+                <Setter Property="Margin" Value="10, 10, 10, 10" />
+                <Setter Property="CornerRadius" Value="10" />
+            </Style>
             <Style x:Key="ImageDesign" TargetType="Image">
                 <Setter Property="Scale" Value="1"/>
+            </Style>
+            <Style x:Key="ImageButtonDesign" TargetType="Image">
+                <Setter Property="BackgroundColor" Value="#DAE5E9"/>
             </Style>
             <Style x:Key="ImageMovieDesign" TargetType="Image">
                 <Setter Property="Scale" Value=".35"/>
