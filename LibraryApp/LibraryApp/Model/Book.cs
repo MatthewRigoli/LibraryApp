@@ -7,7 +7,7 @@ using System.Text;
 namespace LibraryApp.Model
 {
     [Table("Book")]
-    public class Book 
+    public class Book
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
