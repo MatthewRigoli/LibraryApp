@@ -53,7 +53,7 @@ namespace LibraryApp.ViewModels
 
         /*----------------------Images-----------------------*/
         //Book Image Headliner
-        public ImageSource Book => ImageSource.FromResource("LibraryApp.images.Skyward.jpg");
+        public ImageSource Books => ImageSource.FromResource("LibraryApp.images.Skyward.jpg");
 
         //Carousel Book Images
         public ImageSource Book1 => ImageSource.FromResource("LibraryApp.images.carbook1.jpg");
