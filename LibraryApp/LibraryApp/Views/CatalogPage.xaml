@@ -55,7 +55,7 @@
                         <ImageButton Command="{Binding IndividualBookPage}"
                                 Style="{StaticResource ImageButtonDesign}"
                                 Source="{Binding Book1}"
-                                Scale=".7"
+                                Scale=".8"
                                 Grid.Row="0"
                                 Grid.Column="0"
                                 Margin="0,-20,0,-20"/>
