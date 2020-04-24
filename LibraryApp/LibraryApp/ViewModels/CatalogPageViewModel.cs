@@ -36,7 +36,16 @@ namespace LibraryApp.ViewModels
         /*--------------------Navagations--------------------*/
 
         /*----------------------Images-----------------------*/
-        public ImageSource Book1 => ImageSource.FromResource("LibraryApp.images.Skyward.jpg");
+        public ImageSource Book0 => ImageSource.FromResource("LibraryApp.images.Skyward.jpg");
+        public ImageSource Book1 => ImageSource.FromResource("LibraryApp.images.carbook1.jpg");
+        public ImageSource Book2 => ImageSource.FromResource("LibraryApp.images.carbook2.jpg");
+        public ImageSource Book3 => ImageSource.FromResource("LibraryApp.images.carbook3.jpg");
+        public ImageSource Book4 => ImageSource.FromResource("LibraryApp.images.carbook4.jpg");
+        public ImageSource Book5 => ImageSource.FromResource("LibraryApp.images.carbook5.jpg");
+        public ImageSource Book6 => ImageSource.FromResource("LibraryApp.images.carbook6.jpg");
+        public ImageSource Book7 => ImageSource.FromResource("LibraryApp.images.carbook7.jpg");
+        public ImageSource Book8 => ImageSource.FromResource("LibraryApp.images.carbook8.jpg");
+
         /*----------------------Images-----------------------*/
 
     }
