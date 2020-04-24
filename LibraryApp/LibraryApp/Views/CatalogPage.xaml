@@ -22,7 +22,7 @@
                         <ImageButton Command="{Binding IndividualBookPage}"
                                 Style="{StaticResource ImageButtonDesign}"
                                 Source="{Binding Book0}"
-                                Scale=".7"
+                                Scale=".8"
                                 Grid.Row="0"
                                 Grid.Column="0"
                                 Margin="0,-20,0,-20"/>
@@ -55,7 +55,7 @@
                         <ImageButton Command="{Binding IndividualBookPage}"
                                 Style="{StaticResource ImageButtonDesign}"
                                 Source="{Binding Book1}"
-                                Scale=".7"
+                                Scale=".8"
                                 Grid.Row="0"
                                 Grid.Column="0"
                                 Margin="0,-20,0,-20"/>
@@ -88,7 +88,7 @@
                         <ImageButton Command="{Binding IndividualBookPage}"
                                 Style="{StaticResource ImageButtonDesign}"
                                 Source="{Binding Book2}"
-                                Scale=".7"
+                                Scale=".8"
                                 Grid.Row="0"
                                 Grid.Column="0"
                                 Margin="0,-20,0,-20"/>
@@ -121,7 +121,7 @@
                         <ImageButton Command="{Binding IndividualBookPage}"
                                 Style="{StaticResource ImageButtonDesign}"
                                 Source="{Binding Book3}"
-                                Scale=".7"
+                                Scale=".8"
                                 Grid.Row="0"
                                 Grid.Column="0"
                                 Margin="0,-20,0,-20"/>
@@ -154,7 +154,7 @@
                         <ImageButton Command="{Binding IndividualBookPage}"
                                 Style="{StaticResource ImageButtonDesign}"
                                 Source="{Binding Book4}"
-                                Scale=".7"
+                                Scale=".8"
                                 Grid.Row="0"
                                 Grid.Column="0"
                                 Margin="0,-20,0,-20"/>
@@ -187,7 +187,7 @@
                         <ImageButton Command="{Binding IndividualBookPage}"
                                 Style="{StaticResource ImageButtonDesign}"
                                 Source="{Binding Book5}"
-                                Scale=".7"
+                                Scale=".8"
                                 Grid.Row="0"
                                 Grid.Column="0"
                                 Margin="0,-20,0,-20"/>
@@ -220,7 +220,7 @@
                         <ImageButton Command="{Binding IndividualBookPage}"
                                 Style="{StaticResource ImageButtonDesign}"
                                 Source="{Binding Book6}"
-                                Scale=".7"
+                                Scale=".8"
                                 Grid.Row="0"
                                 Grid.Column="0"
                                 Margin="0,-20,0,-20"/>
@@ -253,7 +253,7 @@
                         <ImageButton Command="{Binding IndividualBookPage}"
                                 Style="{StaticResource ImageButtonDesign}"
                                 Source="{Binding Book7}"
-                                Scale=".7"
+                                Scale=".8"
                                 Grid.Row="0"
                                 Grid.Column="0"
                                 Margin="0,-20,0,-20"/>
@@ -286,7 +286,7 @@
                         <ImageButton Command="{Binding IndividualBookPage}"
                                 Style="{StaticResource ImageButtonDesign}"
                                 Source="{Binding Book8}"
-                                Scale=".7"
+                                Scale=".8"
                                 Grid.Row="0"
                                 Grid.Column="0"
                                 Margin="0,-20,0,-20"/>
@@ -319,7 +319,7 @@
                         <ImageButton Command="{Binding IndividualBookPage}"
                                 Style="{StaticResource ImageButtonDesign}"
                                 Source="{Binding Book1}"
-                                Scale=".7"
+                                Scale=".8"
                                 Grid.Row="0"
                                 Grid.Column="0"
                                 Margin="0,-20,0,-20"/>
@@ -352,7 +352,7 @@
                         <ImageButton Command="{Binding IndividualBookPage}"
                                 Style="{StaticResource ImageButtonDesign}"
                                 Source="{Binding Book1}"
-                                Scale=".7"
+                                Scale=".8"
                                 Grid.Row="0"
                                 Grid.Column="0"
                                 Margin="0,-20,0,-20"/>
