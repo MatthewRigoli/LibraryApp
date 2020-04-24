@@ -52,10 +52,33 @@ namespace LibraryApp.ViewModels
         /*--------------------Navagations--------------------*/
 
         /*----------------------Images-----------------------*/
+        //Book Image Headliner
         public ImageSource Book => ImageSource.FromResource("LibraryApp.images.Skyward.jpg");
-        public ImageSource Book2 => ImageSource.FromResource("LibraryApp.images.Skyward.jpg");
+
+        //Carousel Book Images
+        public ImageSource Book1 => ImageSource.FromResource("LibraryApp.images.carbook1.jpg");
+        public ImageSource Book2 => ImageSource.FromResource("LibraryApp.images.carbook2.jpg");
+        public ImageSource Book3 => ImageSource.FromResource("LibraryApp.images.carbook3.jpg");
+        public ImageSource Book4 => ImageSource.FromResource("LibraryApp.images.carbook4.jpg");
+        public ImageSource Book5 => ImageSource.FromResource("LibraryApp.images.carbook5.jpg");
+        public ImageSource Book6 => ImageSource.FromResource("LibraryApp.images.carbook6.jpg");
+        public ImageSource Book7 => ImageSource.FromResource("LibraryApp.images.carbook7.jpg");
+        public ImageSource Book8 => ImageSource.FromResource("LibraryApp.images.carbook8.jpg");
+
+        //Movie Image Headliner
         public ImageSource Movie => ImageSource.FromResource("LibraryApp.images.Onward.jpg");
-        public ImageSource Movie2 => ImageSource.FromResource("LibraryApp.images.Onward.jpg");
+
+        //Carousel Movie Images
+        public ImageSource Movie1 => ImageSource.FromResource("LibraryApp.images.carmovie1.jpg");
+        public ImageSource Movie2 => ImageSource.FromResource("LibraryApp.images.carmovie2.jpg");
+        public ImageSource Movie3 => ImageSource.FromResource("LibraryApp.images.carmovie3.jpg");
+        public ImageSource Movie4 => ImageSource.FromResource("LibraryApp.images.carmovie4.jpg");
+        public ImageSource Movie5 => ImageSource.FromResource("LibraryApp.images.carmovie5.jpg");
+        public ImageSource Movie6 => ImageSource.FromResource("LibraryApp.images.carmovie6.jpg");
+        public ImageSource Movie7 => ImageSource.FromResource("LibraryApp.images.carmovie7.jpg");
+        public ImageSource Movie8 => ImageSource.FromResource("LibraryApp.images.carmovie8.jpg");
+
+
         /*----------------------Images-----------------------*/
     }
 }

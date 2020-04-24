@@ -44,7 +44,7 @@
                             <ColumnDefinition Width="*"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
 
-                        <Image Source="{Binding Book2}"
+                        <Image Source="{Binding Book1}"
                                    Style="{StaticResource ImageDesign}"
                                    Grid.Row="0"
                                    Grid.Column="0"/>
@@ -52,27 +52,27 @@
                                    Style="{StaticResource ImageDesign}"
                                    Grid.Row="0"
                                    Grid.Column="1"/>
-                        <Image Source="{Binding Book2}"
+                        <Image Source="{Binding Book3}"
                                    Style="{StaticResource ImageDesign}"
                                    Grid.Row="0"
                                    Grid.Column="2"/>
-                        <Image Source="{Binding Book2}"
+                        <Image Source="{Binding Book4}"
                                    Style="{StaticResource ImageDesign}"
                                    Grid.Row="0"
                                    Grid.Column="3"/>
-                        <Image Source="{Binding Book2}"
+                        <Image Source="{Binding Book5}"
                                    Style="{StaticResource ImageDesign}"
                                    Grid.Row="0"
                                    Grid.Column="4"/>
-                        <Image Source="{Binding Book2}"
+                        <Image Source="{Binding Book6}"
                                    Style="{StaticResource ImageDesign}"
                                    Grid.Row="0"
                                    Grid.Column="5"/>
-                        <Image Source="{Binding Book2}"
+                        <Image Source="{Binding Book7}"
                                    Style="{StaticResource ImageDesign}"
                                    Grid.Row="0"
                                    Grid.Column="6"/>
-                        <Image Source="{Binding Book2}"
+                        <Image Source="{Binding Book8}"
                                    Style="{StaticResource ImageDesign}"
                                    Grid.Row="0"
                                    Grid.Column="7"/>
@@ -113,7 +113,7 @@
                             <ColumnDefinition Width="*"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
 
-                        <Image Source="{Binding Movie2}"
+                        <Image Source="{Binding Movie1}"
                                    Style="{StaticResource ImageMovieDesign}"
                                    Grid.Row="0"
                                    Grid.Column="0"/>
@@ -121,27 +121,27 @@
                                    Style="{StaticResource ImageMovieDesign}"
                                    Grid.Row="0"
                                    Grid.Column="1"/>
-                        <Image Source="{Binding Movie2}"
+                        <Image Source="{Binding Movie3}"
                                    Style="{StaticResource ImageMovieDesign}"
                                    Grid.Row="0"
                                    Grid.Column="2"/>
-                        <Image Source="{Binding Movie2}"
+                        <Image Source="{Binding Movie4}"
                                    Style="{StaticResource ImageMovieDesign}"
                                    Grid.Row="0"
                                    Grid.Column="3"/>
-                        <Image Source="{Binding Movie2}"
+                        <Image Source="{Binding Movie5}"
                                    Style="{StaticResource ImageMovieDesign}"
                                    Grid.Row="0"
                                    Grid.Column="4"/>
-                        <Image Source="{Binding Movie2}"
+                        <Image Source="{Binding Movie6}"
                                    Style="{StaticResource ImageMovieDesign}"
                                    Grid.Row="0"
                                    Grid.Column="5"/>
-                        <Image Source="{Binding Movie2}"
+                        <Image Source="{Binding Movie7}"
                                    Style="{StaticResource ImageMovieDesign}"
                                    Grid.Row="0"
                                    Grid.Column="6"/>
-                        <Image Source="{Binding Movie2}"
+                        <Image Source="{Binding Movie8}"
                                    Style="{StaticResource ImageMovieDesign}"
                                    Grid.Row="0"
                                    Grid.Column="7"/>
