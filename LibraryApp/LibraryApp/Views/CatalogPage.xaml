@@ -19,7 +19,7 @@
                             <ColumnDefinition Width="*"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
 
-                        <ImageButton Command="{Binding IndividualBookPage}"
+                        <ImageButton Command="{Binding Book0Page}"
                                 Style="{StaticResource ImageButtonDesign}"
                                 Source="{Binding Book0}"
                                 Scale=".8"
@@ -52,7 +52,7 @@
                             <ColumnDefinition Width="*"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
 
-                        <ImageButton Command="{Binding IndividualBookPage}"
+                        <ImageButton Command="{Binding Book1Page}"
                                 Style="{StaticResource ImageButtonDesign}"
                                 Source="{Binding Book1}"
                                 Scale=".8"

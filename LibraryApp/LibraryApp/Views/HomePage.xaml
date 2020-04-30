@@ -107,13 +107,17 @@
                     <Button Text="(435) 462-3240"
                         Clicked="PhoneCall_Clicked"
                         CornerRadius="10"></Button>
-                        <Button Text="Send Email"
+                    <Button Text="Send Email"
                         Clicked="Email_Clicked"
                         CornerRadius="10"></Button>
                     </StackLayout>
             </Frame>
         </StackLayout>
     </ScrollView>
-        <Button Text="Catalog" Grid.Row="0" HorizontalOptions="End" VerticalOptions="Start" Margin="0,-46,10,0" Style="{StaticResource BasicButton}" />
+        <Button Text="Catalog" 
+                Grid.Row="0" 
+                HorizontalOptions="End" 
+                VerticalOptions="Start" 
+                Style="{StaticResource BasicButton}" />
     </Grid>
 </ContentPage>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="LibraryApp.Views.Book0">
+    <ScrollView>
+        <StackLayout>
+            <Frame Style="{StaticResource FramDesign}">
+                <StackLayout HorizontalOptions="Center">
+                    <Label Text="Skyward"
+                               Style="{StaticResource LabelHeadingStyle}"/>
+                    <Image Source="{Binding Books}"
+                                HorizontalOptions="Center"
+                                Scale="1.4"
+                                Margin="0,50,0,50">
+                    </Image>
+                    <Label Text="Title: SkyWard"
+                               Style="{StaticResource NormalTextStyle}"></Label>
+                    <Label Text="Author: BrandSanderson"
+                               Style="{StaticResource NormalTextStyle}"></Label>
+                    <Label Text="Summary: All her life, Spensa has dreamed of becoming a pilot. Of proving she's a hero like her father. She made it to the sky,  but the truths she learned about her father were crushing. The rumors of his cowardice are true - he deserted his flight during battle against the Krell. Worse, though, he turned against his team and attacked them. "
+                               Style="{StaticResource NormalTextStyle}"></Label>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

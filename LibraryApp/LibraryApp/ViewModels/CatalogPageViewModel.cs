@@ -16,6 +16,8 @@ namespace LibraryApp.ViewModels
             Title = "Mount Pleasant Library";
             _navigationService = navigationService;
             IndividualBookPage = new Command(navigate_individualbook_execute);
+            Book0Page = new Command(navigate_book0page_execute);
+            Book1Page = new Command(navigate_book1page_execute);
         }
 
         /*-----------------Command variables-----------------*/
@@ -26,12 +28,38 @@ namespace LibraryApp.ViewModels
             get { return individualBookPage; }
             set { individualBookPage = value; }
         }
+
+        private Command book0Page;
+
+        public Command Book0Page
+        {
+            get { return book0Page; }
+            set { book0Page = value; }
+        }
+
+        private Command book1Page;
+
+        public Command Book1Page
+        {
+            get { return book1Page; }
+            set { book1Page = value; }
+        }
         /*-----------------Command variables-----------------*/
 
         /*--------------------Navagations--------------------*/
         private async void navigate_individualbook_execute()
         {
             await _navigationService.NavigateAsync(nameof(LibraryApp.Views.IndividualBookPage));
+        }
+
+        private async void navigate_book0page_execute()
+        {
+            await _navigationService.NavigateAsync(nameof(LibraryApp.Views.Book0));
+        }
+
+        private async void navigate_book1page_execute()
+        {
+            await _navigationService.NavigateAsync(nameof(LibraryApp.Views.Book1Page));
         }
         /*--------------------Navagations--------------------*/
 

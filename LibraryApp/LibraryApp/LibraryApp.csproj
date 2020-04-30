@@ -38,9 +38,10 @@
   <ItemGroup>
     <PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
     <PackageReference Include="SQLiteNetExtensions" Version="2.1.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
     <PackageReference Include="Xam.Plugins.Messaging" Version="5.2.0" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.1" />
-    <PackageReference Include="Xamarin.Forms" Version="4.5.0.657" />
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.726" />
     <PackageReference Include="Prism.DryIoc.Forms" Version="7.2.0.1422" />
   </ItemGroup>
 
@@ -82,6 +83,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Views\Book0.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Book1Page.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\CatalogPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

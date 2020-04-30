@@ -13,7 +13,7 @@
                 <StackLayout HorizontalOptions="Center">
                     <Label Text="New Book Of The Month!"
                                Style="{StaticResource LabelHeadingStyle}"/>
-                    <Image Source="{Binding BookS}"
+                    <Image Source="{Binding Books}"
                                 HorizontalOptions="Center"
                                 Scale="1.4"
                                 Margin="0,50,0,50">

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="LibraryApp.Views.Book1Page">
+    <ScrollView>
+        <StackLayout>
+            <Frame Style="{StaticResource FramDesign}">
+                <StackLayout HorizontalOptions="Center">
+                    <Label Text="A Memory of Light"
+                               Style="{StaticResource LabelHeadingStyle}"/>
+                    <Image Source="{Binding Book1}"
+                                HorizontalOptions="Center"
+                                Scale="1.4"
+                                Margin="0,50,0,50">
+                    </Image>
+                    <Label Text="Title: A Memory of Light"
+                               Style="{StaticResource NormalTextStyle}"></Label>
+                    <Label Text="Author: Robert Jordan"
+                               Style="{StaticResource NormalTextStyle}"></Label>
+                    <Label Text="Rand al'Thor, the Dragon Reborn, leads the nations into the Last Battle with the Dark One to save the world from his dark forces once and for all. The time of the Last Battle is upon the world as the Third Age is days from coming to an end."
+                               Style="{StaticResource NormalTextStyle}"></Label>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
