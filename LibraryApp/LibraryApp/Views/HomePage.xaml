@@ -118,6 +118,7 @@
                 Grid.Row="0" 
                 HorizontalOptions="End" 
                 VerticalOptions="Start" 
+                Margin="0,-46,10,0"
                 Style="{StaticResource BasicButton}" />
     </Grid>
 </ContentPage>
